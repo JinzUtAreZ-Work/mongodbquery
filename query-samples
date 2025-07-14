@@ -1,2 +1,21 @@
 not equal multiple
 { member_status: { $nin: ["For Validation", "Active", "Expired"] } }
+
+some queries used
+{ code: "MCT", client_id:{ $exists: true, $ne: null }}
+
+{
+  client_id: { $exists: true, $ne: null },
+  _id: ObjectId("6810684a52c2851c0ce7b3c6")
+}
+
+{ 
+ 
+  $expr : {
+        $and: [
+            { $lte: ["2026-04-28T00:00:00.000Z", "2026-04-28T00:00:00.000Z"] },
+            { $gte: ["2026-04-28T00:00:00.000Z", "2026-04-28T00:00:00.000Z"] }
+        ]
+  }
+
+}
