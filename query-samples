@@ -1,0 +1,2 @@
+not equal multiple
+{ member_status: { $nin: ["For Validation", "Active", "Expired"] } }
