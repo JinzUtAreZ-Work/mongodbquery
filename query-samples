@@ -1,6 +1,9 @@
 not equal multiple
 { member_status: { $nin: ["For Validation", "Active", "Expired"] } }
 
+multiple object ids
+{_id: {$in:[ObjectId("6874c1a7e776363250ed8826"),ObjectId("6874c1a6e776363250ed8824")]}}
+
 some queries used
 { code: "MCT", client_id:{ $exists: true, $ne: null }}
 
