@@ -4,7 +4,7 @@ not equal multiple
 multiple object ids
 {_id: {$in:[ObjectId("6874c1a7e776363250ed8826"),ObjectId("6874c1a6e776363250ed8824")]}}
 
-multiple or
+multiple or // check wrong code
 {
   _id: {
     $or: [
